@@ -1,16 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.banner{
+
+.banner {
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.60)), url(bg.jpg);
+    height: auto; /* This will make the banner fill the screen */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.60)), url('bg.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: scroll; /* Default behavior */
 }
-.navbar{
+
+.navbar {
     width: 100%;
     margin: auto;
     padding: 35px 0;
@@ -19,20 +22,66 @@
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.76);
 }
-.logo{
+
+.logo {
     width: 230px;
     margin-left: 45px;
     cursor: pointer;
 }
-.navbar ul li{
+
+.navbar ul li {
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     margin-right: 45px;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
-    font-size: 40;
+    font-size: 40px;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+}
+
+.intro {
+    
+    
+    padding-top: 50px;
+    margin: auto;
+    text-decoration: none;
+    font-size: 50px;
+    color: #fff;
+    align-content: center;
+    width: 100%;
+}
+
+.intro h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.nate {
+    width: auto;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    border-radius: 65px;
+}
+
+.intro h6 {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 500;
+}
+
+/* Content Section to Allow Scrolling */
+.content {
+    padding: 50px;
+    height: 1500px; /* Added enough height to allow for scrolling */
+    background-color: #f0f0f0;
 }
