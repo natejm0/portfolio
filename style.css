@@ -1,87 +1,64 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
 }
-
 .banner {
     width: 100%;
-    height: auto; /* This will make the banner fill the screen */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.60)), url('bg.jpg');
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.60)), url('bg.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: scroll; /* Default behavior */
+    background-attachment: scroll;
+    overflow-y: scroll;
 }
 
 .navbar {
-    width: 100%;
+    width: 85%;
     margin: auto;
-    padding: 35px 0;
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.76);
 }
-
 .logo {
-    width: 230px;
-    margin-left: 45px;
+    width: 190px;
     cursor: pointer;
 }
-
 .navbar ul li {
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
-    margin-right: 45px;
+    margin: 0 18px;
+    position: relative;
 }
-
 .navbar ul li a {
     text-decoration: none;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
-
-.intro {
-    
-    
-    padding-top: 50px;
-    margin: auto;
-    text-decoration: none;
-    font-size: 50px;
-    color: #fff;
-    align-content: center;
+.navbar ul li:hover::after{
     width: 100%;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: white;
+    position:absolute;
+    left: 0;
+    bottom: -7px;
 }
-
-.intro h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-.nate {
-    width: auto;
-    height: 500px;
-    margin: auto;
-    display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    border-radius: 65px;
-}
-
-.intro h6 {
-    padding-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 500;
-}
-
-/* Content Section to Allow Scrolling */
 .content {
-    padding: 50px;
-    height: 1500px; /* Added enough height to allow for scrolling */
-    background-color: #f0f0f0;
+    padding-top: 300;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 90px;
+}
+.content p{
+    font-size: 25px;
 }
