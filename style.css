@@ -178,8 +178,6 @@ h1 {
 
 /* Styling for each portfolio item */
 .portfolio-item {
-    /*background-color: white;*/
-    border: 5px solid #ddd;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -200,13 +198,12 @@ h1 {
 }
 
 .portfolio-item h3 {
-    margin-top: 15px;
+
     font-size: 30px;  /* Smaller font size */
     color: #ffffff;
 }
 
 .portfolio-item p {
-    margin-top: 10px;
     font-size: 15px;  /* Smaller font size for the description */
     color: #ffffff;
     line-height: 1.5;
